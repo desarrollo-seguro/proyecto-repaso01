@@ -5,6 +5,7 @@ public class Terminator {
     private String nombre;
 
     public void disparar() {
+        System.out.println("Hello World!");
         // carga la escopeta
         // apuntas
         // apretar gatillo
