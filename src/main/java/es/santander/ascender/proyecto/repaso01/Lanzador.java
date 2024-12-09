@@ -30,6 +30,23 @@ public class Lanzador {
         String texto = "La letra en la variable es " + miVariable;
 
         System.out.println(texto);
+        boolean res = (0 != 0);
 
+        System.out.println("El nombre de la clase es " + Terminator.class);
+
+        Terminator terminator1 = new Terminator();
+
+        Terminator terminator2 = new Terminator();
+
+        Terminator terminator3 = terminator2;
+
+        
+        Magdalena primeraMagdalena = new Magdalena(1, true);
+        Magdalena segundaMagdalena = new Magdalena(2, false);
+
+        segundaMagdalena.pegarMordisco();
+        primeraMagdalena.pegarMordisco();
+
+        System.out.println("Se acabó el programa");
     }
 }
