@@ -48,5 +48,10 @@ public class Lanzador {
         primeraMagdalena.pegarMordisco();
 
         System.out.println("Se acabó el programa");
+
+        Humano humano = new Humano();
+
+        humano.setEstatura(300);
+
     }
 }

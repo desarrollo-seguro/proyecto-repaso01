@@ -9,8 +9,8 @@ public class Magdalena {
         comida = false;
     }
 
-    public Magdalena(int sabor, boolean comido) {
-        this.sabor = sabor;
+    public Magdalena(int sb, boolean comido) {
+        this.sabor = sb;
         this.comida = comido;
     }
 
