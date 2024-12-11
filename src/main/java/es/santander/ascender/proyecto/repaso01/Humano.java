@@ -1,7 +1,8 @@
 package es.santander.ascender.proyecto.repaso01;
 
 public class Humano {
-    public final int NUMERO_OJOS;
+    public static int NUMERO_OJOS;
+    public static final double PI = 3.1415926535;
     private int estatura = 0;
 
     public Humano() {
@@ -12,6 +13,16 @@ public class Humano {
         this.estatura = estatura;
         this.NUMERO_OJOS = numeroOjos;
     }
+
+    public void metodoNoEstatico() {
+        this.estatura = 4;
+    }
+
+    public static void metodoEstatico() {
+        NUMERO_OJOS = 14;
+        main(null);
+    }
+
 
     public void setEstatura(int estatura) {
         this.estatura = estatura;
