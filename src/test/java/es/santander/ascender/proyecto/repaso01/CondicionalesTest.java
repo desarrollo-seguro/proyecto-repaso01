@@ -1,6 +1,7 @@
 package es.santander.ascender.proyecto.repaso01;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
@@ -31,4 +32,13 @@ public class CondicionalesTest {
 
         assertFalse(resultado);
     }
+
+    @Test
+    void testIsParConSwitchCase_EsPar() {
+        Condicionales aQuienTesteo = new Condicionales();
+        
+        boolean resultado = aQuienTesteo.isParConSwitchCase(6);
+
+        assertTrue(resultado);
+    }    
 }

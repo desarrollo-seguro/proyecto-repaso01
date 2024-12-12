@@ -1,6 +1,10 @@
 package es.santander.ascender.proyecto.repaso01;
 
 public class Condicionales {
+    public boolean isPar(int numero) {
+        return numero % 2 == 0;
+    }
+
     public boolean isParConIf(int numero) {
         int resto = numero % 2;
         
@@ -10,6 +14,14 @@ public class Condicionales {
         } else {
              par = false;
         }
+
+        if (true) {
+            //
+        } else {
+            //
+        }
+
+
 
         return par;
     }
@@ -32,6 +44,27 @@ public class Condicionales {
     }
     
     public boolean isParConOperadorTernario(int numero) {
-        throw new UnsupportedOperationException("No implementado aun");
+        int resto = (numero % 2);
+
+        return (resto == 0) ? true : false;
     }    
+
+    public boolean isDiaLaborable(int diaDeLaSemana) {
+        boolean resultado = false;
+        switch (diaDeLaSemana) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                resultado = true;
+                break;
+            default:
+                resultado = false;
+                break;
+        }
+        return resultado;
+    }
+
+
 }
